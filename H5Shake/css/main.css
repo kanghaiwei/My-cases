@@ -1,0 +1,154 @@
+@media (min-width: 640px){
+    #h5{
+        display: none;
+    }
+}
+html,body{
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	font-family: 'Microsoft Yahei';
+}
+audio{
+	display: none;
+}
+#h5{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #fff;
+	position: absolute;
+	background: url(../img/main-bg.jpg) no-repeat;
+	background-size: cover;
+}
+#page1{
+	width: 100%;
+	height: 100%;
+	background: url(../img/p1-bg.jpg) no-repeat;
+	background-size: 100%;
+	animation: p1-bg .7s infinite;
+	-webkit-animation: p1-bg .7s infinite;
+}
+@keyframes p1-bg {
+	to{
+		background: none;
+	}
+}
+@-webkit-keyframes p1-bg {
+	to{
+		background: none;
+	}
+}
+.p1-word{
+	width: 54.2vw;
+	position: absolute;
+	left: 50%;
+	bottom: 135vw;
+	margin-left: -27.1vw; 
+}
+.p1-cap{
+	width: 60.8vw;
+	position: absolute;
+	left: 26vw;
+	bottom: 80vw;
+	z-index: 10;
+	transform-origin: 50% 33%;
+	animation: p1-cap .5s infinite;
+	-webkit-animation: p1-cap .5s infinite;
+}
+@keyframes p1-cap {
+	0%  { transform: rotate( 2deg ); }
+	25% { transform: rotate( 0deg ); }
+	50% { transform: rotate( -2deg ); }
+	75% { transform: rotate( 0deg ); }
+	100%{ transform: rotate( 2deg ); }
+}
+@-webkit-keyframes p1-cap {
+	0%  { transform: rotate( 2deg ); }
+	25% { transform: rotate( 0deg ); }
+	50% { transform: rotate( -2deg ); }
+	75% { transform: rotate( 0deg ); }
+	100%{ transform: rotate( 2deg ); }
+}
+.p1-man{
+	width: 100%;
+	position: absolute;
+	bottom: 4vh;
+	z-index: 5;
+}
+.p1-btn{
+	width: 54.6vw;
+	position: absolute;
+	left: 22.7vw;
+	bottom: 4.2vh;
+	z-index: 10;
+}
+.p1-bom{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+#page2{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/p2-bg.png);
+	background-size: 100%;
+	display: none;
+}
+.p2-man1{
+	width: 26vw;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.p2-man2{
+	width: 26vw;
+	position: absolute;
+	right: 0;
+	bottom: 4vh;
+}
+.luck{
+	width: 100vw;
+	height: 60vw;
+	/* background-image: url(../img/img14.png); */
+	background-size: 100%;
+	position: absolute;
+	top: 38vw;
+}
+.btns{
+	position: absolute;
+	top: 108vw;
+	left: 50%;
+	width: 26vw;
+	height: 10vw;
+	margin-left: -12vw;
+}
+.btn1{
+	padding-bottom: 2vw;
+}
+.btn1,.btn2{
+	width: 26vw;
+	height: 9.5vw; 
+}
+#page3{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	opacity: 0.8;
+	z-index: 99;
+}
+.share{
+	width: 51.5vw;
+	height: 9vw;
+	position: absolute;
+	top: 2vh;
+	right: 2vh;
+}

@@ -49,7 +49,7 @@ function shake(e){
 	//获取设备加速度信息 
 	var acceleration = e.accelerationIncludingGravity;
 	var nowTime = new Date().getTime();
-	//这次摇的时间距离上次摇的时间有一定间隔才执行
+	//本次摇的时间距离上次摇的时间有一定间隔才执行
 	if(nowTime - lastTime > 100){
 		var durition = nowTime - lastTime;
 		lastTime = nowTime;

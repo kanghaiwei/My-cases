@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>iMusic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 禁止手动缩放 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- UC强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="wrap">
+		<audio src="music/任素汐 - 我要你.mp3" style="display: none;" id="audio"></audio>
+		<div class="header">iMusic</div>
+		<div class="mask"></div>
+		<div class="music-panel">
+			<div class="disk">
+				<div class="disk-bg"></div>
+				<div class="music-img"></div>	
+			</div>
+			<div class="music-msg">
+				<span class="song">我要你</span>
+				<span class="singer">任素汐</span>
+			</div>
+		</div>	
+		<div class="footer">
+			<div class="process-bar">
+				<div class="process-all">
+					<div class="process-cur">
+						<span class="cur1-btn"></span>
+					</div>
+				</div>			
+			</div>
+			<div class="btns">
+				<span class="cycle-btn"></span>
+				<span class="prev-btn"></span>
+				<span class="play-btn"></span>
+				<span class="next-btn"></span>
+				<span class="list-btn"></span>
+			</div>
+			<div class="voice-bar">
+				<div class="voice-min"></div>
+				<div class="voice-all">
+					<div class="voice-cur">
+						<span class="cur2-btn"></span>
+					</div>
+				</div>			
+				<div class="voice-max"></div>
+			</div>
+		</div>
+	</div>
+	<script src='js/main.js'></script>
+</body>
+</html>

@@ -1,0 +1,488 @@
+﻿/**
+ * Created by kanghaiwei.
+ */
+@charset "utf-8";
+/*通用部分*/
+body, div, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, ol, span, p, strong,i{
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei;
+    font-size:18px;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+    *cursor: default;
+    overflow: hidden;
+    text-align: center;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.cl {
+    clear: both;
+}
+ul,li{
+    list-style: none;
+}
+a {
+    text-decoration: none
+}
+h2{
+    font-size: 24px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border:0;
+    vertical-align:top;
+}
+/*头部*/
+.header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 88px;
+    background-color: #f0f0f0;
+    background:rgba(240, 240, 240, 0.9);
+    z-index: 9999;
+
+}
+.header-box{
+    margin: 0 auto;
+    width: 1024px;
+	position:relative;
+	z-index:999;
+}
+.logo{
+    margin:12px 96px 0 38px;
+    width: 145px;
+    overflow: hidden;
+}
+.nav{
+    width: auto;
+    height: 34px;
+    margin: 26px 0;
+}
+.nav ul li{
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    width: auto;
+    line-height:34px ;
+    font-size: 16px;
+    font-weight: bold;
+    color:#5D5D5D;
+	cursor:pointer;
+}
+#navBar .active {
+    border-bottom: 2px solid #ca0915;
+    color: #ca0915;
+}
+#navBar .pass {
+    color: #ca0915;
+    opacity: 0.75;
+}
+.nav ul li span{
+    left: 0;
+    bottom: -2px;
+    display: none;
+    position: absolute;
+    width: 64px;
+    height: 2px;
+    background-color:#ca0915;
+}
+.nav ul li:first-child span:first-child{
+    width: 32px;
+}
+/*中间内容*/
+#pageContain {
+    overflow: hidden;
+}
+.page {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+.contain {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+    z-index: 0;
+}
+.current .contain,.slide .contain {
+    display: block;
+}
+.current {
+    display: block;
+    z-index: 1;
+}
+.slide {
+    display: block;
+    z-index: 2;
+}
+.swipe {
+    display: block;
+    z-index: 3;
+    transition-duration: 0ms !important;
+    -webkit-transition-duration: 0ms !important;
+}
+.width1024{
+    position: relative;
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+}
+/*首页*/
+.page1{
+    background:url("../images/home.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.page1 img{
+    position: relative;
+    top:50%;
+    margin-top: -106px;
+    width: 404px;
+    height: 212px;
+}
+/*园区体验*/
+.page2{
+    background:url("../images/02.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.two-txt{
+    position: absolute;
+    right: 0;
+    bottom: 11%;
+}
+.two-txt h2{
+    display: block;
+    margin-bottom: 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 2px 1px 3px #000;
+}
+.two-txt p{
+    display: block;
+    text-align: left;
+    width: auto;
+    color: #fff;
+    font-size: 18px;
+    line-height: 34px;
+    text-shadow: 2px 1px 3px #000;
+}
+/*园区保税*/
+.page3{
+    background:url("../images/03.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.page3 .three-txt{
+    position: absolute;
+    top: 422px;
+    left: 50%;
+}
+.three-txt h2{
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    width: auto;
+    color: #fff;
+    padding:0 12px;
+    background:rgba(21, 21, 21, 0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000,endColorstr=#BF000000);
+}
+.three-txt span{
+    width: 284px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 0 20px 0 12px;
+    background-color:rgba(21, 21, 21, 0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000,endColorstr=#BF000000);
+    height: 34px;
+    text-align: left;
+    line-height: 34px;
+    color: #fff;
+}
+/*跨境电商*/
+.page4{
+    background:url("../images/04.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.four-txt{
+    position: absolute;
+    right: 138px;
+    bottom: 14%;
+}
+.four-txt h2{
+    padding-left: 14px;
+    height: 40px;
+    width: auto;
+    text-align: left;
+    line-height: 40px;
+    font-size: 24px;
+    color: #CA0915;
+}
+.four-txt p{
+    display: block;
+    margin-top: 10px;
+    padding: 3px 14px 0 14px;
+    text-align: left;
+    width: auto;
+    height: auto;
+    color: #5d5d5d;
+    font-size: 18px;
+    line-height: 30px;
+}
+.four-txt-t{
+    position: absolute;
+    right: 138px;
+    bottom: 14%;
+    color: #fff;
+    text-shadow: 2px 1px 3px #000;
+}
+.four-txt-t h2{
+    padding-left: 14px;
+    height: 40px;
+    width: auto;
+    text-align: left;
+    line-height: 40px;
+    font-size: 24px;
+}
+.four-txt-t p{
+    display: block;
+    margin-top: 10px;
+    padding: 3px 14px 0 14px;
+    text-align: left;
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    line-height: 30px;
+}
+/*文化交流*/
+.page5{
+    background:url("../images/05.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.five-txt{
+    position: absolute;
+    left: 488px;
+    top: 254px;
+    text-align: left;
+}
+.five-txt h2{
+    display: block;
+    margin-bottom: 18px;
+    padding:0 12px 0 2px;
+    height: 40px;
+    width: auto;
+    background-color:rgba(0, 0, 0, 0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000,endColorstr=#BF000000);
+    line-height: 40px;
+    color: #fff;
+}
+.five-txt p{
+    padding-left: 12px;
+    display: block;
+    margin-bottom: 4px;
+    background-color:rgba(0, 0, 0, 0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000,endColorstr=#BF000000);
+    height: 34px;
+    width: 227px;
+    color: #fff;
+    line-height: 34px;
+}
+.five-txt p.last{
+    width: 330px;
+}
+.five-txt-t{
+    position: absolute;
+    left: 488px;
+    bottom: 28%;
+    text-align: left;
+}
+.five-txt-t h2{
+    display: block;
+    margin-bottom: 18px;
+    padding:0 12px 0 2px;
+    height: 40px;
+    width: auto;
+    background-color:rgba(0, 0, 0, 0.8);
+    line-height: 40px;
+    color: #fff;
+}
+.five-txt-t p{
+    padding-left: 12px;
+    display: block;
+    margin-bottom: 4px;
+    background-color:rgba(0, 0, 0, 0.8);
+    height: 34px;
+    width: 227px;
+    color: #fff;
+    line-height: 34px;
+}
+.five-txt-t p:last-child{
+    width: 330px;
+}
+/*园区服务*/
+.page6{
+    background:url("../images/06.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.six-txt{
+    position: absolute;
+    left: 50%;
+    margin-left: -120px;
+    width:240px;
+    bottom: 10%;
+}
+.six-txt h2{
+    text-align: center;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-shadow: 2px 1px 3px #000;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.six-txt p{
+    text-align: center;
+    display: block;
+    color: #fff;
+    text-shadow: 2px 1px 3px #000;
+    font-size: 18px;
+    line-height: 32px;
+}
+/*园区位置*/
+.page7{
+    background-color: #ededed;
+}
+.page7 .seven-content{
+    position: relative;
+    top:50%;
+    height: 472px;
+    margin-top: -216px;
+}
+.page7 img{
+    margin: 0 20px 0 5px;
+    width: 630px;
+    float: left;
+}
+.page7 .seven-txt{
+    float: left;
+    margin-top:150px;
+    width: 310px;
+    color: #b97f5c;
+}
+.seven-txt h2{
+    display: block;
+    width: 100%;
+    line-height: 36px;
+    border-top:2px solid #b97f5c ;
+    border-bottom:2px solid #b97f5c ;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.seven-txt p{
+    line-height: 35px;
+    font-size: 18px;
+}
+/*申请入驻*/
+.page8{
+    background-color: #f0f0f0;
+}
+.apply-entry-con{
+    position: absolute;
+    left: 50%;
+    top:48%;
+    margin:-124px auto 0 -265px;
+    color: #5d5d5d;
+    width: 548px;
+}
+.apply-entry-con h2{
+    font-size: 30px;
+    color: #ca0915;
+}
+.apply-entry-con img{
+    width: 178px;
+    height: 178px;
+    margin: 54px 64px auto 0;
+}
+.apply-entry-txt{
+    text-align:left;
+}
+.apply-entry-txt p{
+    font-size: 14px;
+    margin-top:32px;
+    line-height: 38px;
+    font-weight: bold;
+}
+.page8 .footer{
+    position: absolute;
+    left: 50%;
+    margin-left: -160px;
+    bottom: 70px;
+    width: auto;
+    color: #5d5d5d;
+    text-align: center;
+}
+.page8 .footer img{
+    width: 265px;
+}
+.page8 .footer span{
+    font-size: 12px;
+}
+.apply-btn{
+    position: fixed;
+    bottom: 148px;
+    right: 39px;
+    padding-top: 12px;
+    width: 38px;
+    height: 104px;
+    color: #ff6363;
+    background-color:rgba(0,0,0,.8);
+    cursor:pointer;
+    z-index: 10;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+/*返回顶部*/
+.up-btn{
+    position: fixed;
+    bottom: 92px;
+    right: 42px;
+    width: 32px;
+    height: 32px;
+    cursor:pointer;
+    z-index: 10;
+    display: none;
+}
+.down-btn{
+    position: fixed;
+    bottom: 0;
+    left:50%;
+    margin-left: -24px;
+    width: 48px;
+    height: 48px;
+    cursor:pointer;
+    z-index: 10;
+}

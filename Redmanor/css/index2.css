@@ -1,0 +1,470 @@
+/**
+ * Created by kanghaiwei.
+ */
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,img{
+    margin:0;
+    padding:0; 
+}
+body {
+    font-size:14px; 
+    font-family: "微软雅黑"; 
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 { 
+    font-weight:normal; 
+    font-size:100%; 
+}
+address, caption, cite, code, dfn, em, strong, th, var { 
+    font-style:normal; 
+    font-weight:normal;
+}
+a { 
+    color:#555; 
+    text-decoration:none; 
+}
+a:hover { 
+    text-decoration:underline; 
+}
+fieldset, img { 
+    border:none;
+    width: 100%;
+}
+ol, ul, li { 
+    list-style:none; 
+}
+table { 
+    border-collapse:collapse; 
+    border-spacing: 0;
+}
+body {
+    background-color: #f0f0f0;
+}
+.page-one, .page-two, .page-three, .page-four, .page-five, .page-six { 
+    opacity:0
+}
+.swiper-slide-visible.page-one, .swiper-slide-visible.page-two, .swiper-slide-visible.page-three, .swiper-slide-visible.page-four, .swiper-slide-visible.page-five, .swiper-slide-visible.page-six { opacity:1}
+.swiper-slide { 
+    position:relative; 
+}
+.page-one, .page-two, .page-three, .page-four, .page-five, .page-six, .page-seven, .page-eight {
+    background: #f0f0f0;
+}
+
+/* 头部 */
+.head {
+    background: #f0f0f0;
+    width: 100%;
+    height: 44px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.logo {
+    display: inline-block;
+    width: 72px;
+    margin: 6px 6px 4px 16px;
+}
+.menu {
+    display: inline-block;
+    width: 24px;
+    position: absolute;
+    right: 0;
+    margin: 10px 12px 10px 0;
+}
+.tab {
+    /*visibility: hidden;*/
+    display: none;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    margin-top: 44px;
+    background: rgba(0,0,0,0.2);
+}
+.menuList {
+    position: absolute;
+    width: 142px;
+    right: 0;
+    background: #f1f1f1;
+    padding: 6px 8px;
+}
+.menuList li {
+    width: 100%;
+    text-align: center;
+    color: #5d5d5d;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #d8d8d8;
+}
+.menuList li:first-of-type {
+    margin-top: 6px;
+}
+.menuList li:last-of-type {
+    margin-bottom: 6px;
+    border-bottom: none;
+}
+.on {
+    color: #ca0915 !important;
+}
+.up {
+    z-index: 999;
+    width: 30px;
+    position: fixed;
+    right: 16px;
+    bottom: 35px;
+}
+.pageTitle {
+    display: inline-block;
+    margin: 0 auto;
+    width: 28%;
+    margin-left: 36%;
+    padding: 2% 0;
+    text-align: center;
+    background: #9F1019;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: -20px;
+    position: absolute;
+}
+
+.iconTop { width:100%; position:absolute; bottom:2px; display: inline-block; text-align: center; opacity:0;animation: paging02 2s  ease-in-out .3s infinite;-webkit-animation: paging02 2s  ease-in-out .3s infinite;}
+@-webkit-keyframes paging02{   
+    0% {opacity:0;}
+    50% {opacity:0.8;}
+    100% {opacity:0;}
+}
+.iconTop img {
+    width: 8px;
+}
+/* page1 */
+.page11 {
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+}
+.page12 {
+    position: absolute;
+    width: 68%;
+    left: 16%;
+    top: 22%;
+}
+.swiper-slide-visible.page-one .page12 {
+    animation: page12 1s .5s ease both;
+    -webkit-animation: page12 1s .5s ease both;
+}
+@-webkit-keyframes page12{   
+    0% {opacity: 0;-webkit-transform:translateY(-20px)}
+    100% {opacity: 1;-webkit-transform:translateY(0)}
+}
+
+/* page2 */
+
+.page21 {
+    margin-top: 44px;
+}
+.page22, .page32, .page52, .page62 {
+    position: absolute;
+    width: 100%;
+    margin-top: 12%;
+}
+.page22 p, .page32 p, .page52 p, .page62 p {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #CA0915;
+    line-height: 32px;
+    margin-bottom: 4%;
+}
+.page22 span, .page32 span, .page52 span, .page62 span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #5D5D5D;
+    line-height: 28px;
+}
+.swiper-slide-visible.page-two .page22 {
+    animation: page22 1s .5s ease both;
+    -webkit-animation: page22 1s .5s ease both;
+}
+@-webkit-keyframes page22{   
+    0% {opacity: 0;-webkit-transform:translateX(-40px)}
+    100% {opacity: 1;-webkit-transform:translateX(0)}
+}
+
+/* page3 */
+
+.page31 {
+    margin-top: 12%;
+}
+
+.swiper-slide-visible.page-three .page32 {
+    animation: page32 1s .5s ease both;
+    -webkit-animation: page32 1s .5s ease both;
+}
+@-webkit-keyframes page32{   
+    0% {opacity: 0;-webkit-transform:translateX(40px)}
+    100% {opacity: 1;-webkit-transform:translateX(0)}
+}
+
+/* page4 */
+
+.page41 {
+    margin-top: 30px;
+}
+.page42 {
+    position: absolute;
+    width: 94%;
+    left: 6%;
+    bottom: 12%;
+}
+.page42 p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #CA0915;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.page42 span {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    color: #5D5D5D;
+    line-height: 28px;
+    font-weight: bold;
+}
+.swiper-slide-visible.page-four .page42 {
+    animation: page42 1s .5s ease both;
+    -webkit-animation: page42 1s .5s ease both;
+}
+@-webkit-keyframes page42{   
+    0% {opacity: 0;-webkit-transform:translateY(40px)}
+    100% {opacity: 1;-webkit-transform:translateY(0)}
+}
+
+/* page5 */
+
+.page51 {
+    margin-top: 44px;
+}
+
+.swiper-slide-visible.page-five .page52 {
+    animation: page52 1s .5s ease both;
+    -webkit-animation: page52 1s .5s ease both;
+}
+@-webkit-keyframes page52{   
+    0% {opacity: 0;-webkit-transform:translateY(-40px)}
+    100% {opacity: 1;-webkit-transform:translateY(0)}
+}
+/* page6 */
+.page61 {
+    margin-top: 44px;
+}
+.swiper-slide-visible.page-six .page62 {
+    animation: page62 1s .5s linear both;
+    -webkit-animation: page62 1s .5s linear both;
+}
+@-webkit-keyframes page62{   
+    0% {opacity: 0;-webkit-transform:translateY(0px)}
+    100% {opacity: 1;-webkit-transform:translateY(0)}
+}
+/* page7 */
+.page71 {
+    margin-top: 44px;
+}
+.page72 p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b97f5c;
+    line-height: 28px;
+    width: 90%;
+    margin-left: 3%;
+    text-align: center;
+    margin-top: 6%;
+    padding:6px 2%;
+    border-top: 2px solid #b97f5c;
+    border-bottom: 2px solid #b97f5c;
+}
+.page72 span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #b97f5c;
+    line-height: 24px;
+}
+.page72 span:first-of-type {
+    margin-top: 4%;
+}
+/* page8 */
+.text {
+    padding: 18% 0 8% 0;
+}
+.text h1 {
+    width: 100%;
+    text-align: center;
+    color: #ca0915;
+    font-size: 22px;
+    font-weight: bold;
+}
+.text p {
+    width: 100%;
+    color: #5d5d5d;
+    font-size: 14px;
+    margin-top: 6%;
+    margin-left: 13%;
+}
+.text p:first-of-type {
+    margin-top: 10%;
+}
+.wx {
+    width: 42%;
+    margin-left: 29%;
+    margin-top: 0;
+}
+.bottom {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+.bottom img {
+    width: 56%;
+    margin-left: 21%;
+}
+.bottom span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #5d5d5d;
+    font-size: 12px;
+    margin-top: 10px;
+}
+/* Basic Swiper Styles */ 
+.swiper-container {
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    backface-visibility:hidden;
+    z-index:1;
+}
+.swiper-wrapper {
+    position:relative;
+    width:100%;
+    -webkit-transition-property:-webkit-transform, left, top;
+    -webkit-transition-duration:0s;
+    -webkit-transform:translate3d(0px,0,0);
+    -webkit-transition-timing-function:ease;
+    
+    -moz-transition-property:-moz-transform, left, top;
+    -moz-transition-duration:0s;
+    -moz-transform:translate3d(0px,0,0);
+    -moz-transition-timing-function:ease;
+    
+    -o-transition-property:-o-transform, left, top;
+    -o-transition-duration:0s;
+    -o-transform:translate3d(0px,0,0);
+    -o-transition-timing-function:ease;
+    -o-transform:translate(0px,0px);
+    
+    -ms-transition-property:-ms-transform, left, top;
+    -ms-transition-duration:0s;
+    -ms-transform:translate3d(0px,0,0);
+    -ms-transition-timing-function:ease;
+    
+    transition-property:transform, left, top;
+    transition-duration:0s;
+    transform:translate3d(0px,0,0);
+    transition-timing-function:ease;
+
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.swiper-slide {
+    -webkit-backface-visibility:hidden;
+    float: left;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.swiper-container {
+    height:100vh;
+    width: 100%;
+}
+.swiper-slide {
+    height:100vh;
+    width: 100%;
+}
+/* 适配 iphone 6 plus */
+@media screen and (min-height:700px){
+    .head {height: 66px;}  
+    .logo {width: 108px;margin: 9px 6px 4px 24px;}
+    .menu {width: 36px; margin: 15px 18px 15px 0;}
+    .tab {margin-top: 66px;}
+    .menuList {width: 180px; padding: 8px 10px;}
+    .menuList li {font-size: 18px; padding: 14px 0;}
+    .up {width: 38px;right: 20px;bottom: 40px;}
+    .pageTitle {font-size: 18px; margin-top: -24px;}
+    /* page 2 */
+    .page21, .page31, .page51, .page61 {margin-top: 66px;}
+    .page22, .page32, .page52, .page62 {margin-top: 12%;}
+    .page22 p, .page32 p, .page52 p, .page62 p {font-size: 22px;}
+    .page22 span, .page32 span, .page52 span, .page62 span {font-size: 18px;}
+    /* page 4 */
+    .page42 {bottom: 14%;}
+    .page42 p {font-size: 22px;}
+    .page42 span {font-size: 16px;}
+    /* page 7 */
+    .page71 {margin-top: 66px;}
+    .page72 p {font-size: 22px; line-height: 30px; width: 86%; margin-left: 5%;}
+    .page72 span {font-size: 18px; line-height: 32px;}
+    /* page 8 */
+    .text h1 {font-size: 24px;}
+    .text p {font-size: 16px;}
+    .bottom span {font-size: 14px;}
+    .wx {width: 46%; margin-left: 27%; margin-top: 10%;}
+}
+/* 适配 iphone 6 */
+@media screen and (min-height:600px)and (max-height:700px){
+    .pageTitle {font-size: 18px; margin-top: -22px;}
+    /* page 2 */
+    .page22 p, .page32 p, .page52 p, .page62 p {font-size: 22px;}
+    .page22 span, .page32 span, .page52 span, .page62 span {font-size: 18px;}
+    /* page 4 */
+    .page42 {bottom: 10%;}
+    .page42 p {font-size: 22px;}
+    .page42 span {font-size: 16px;}
+    /* page 7 */
+    .page72 p {width: 92%; margin-left: 2%; font-size: 22px; line-height: 30px;}
+    .page72 span {font-size: 18px; line-height: 32px;}
+    /* page 8 */
+    .text h1 {font-size: 24px;}
+    .text p {font-size: 16px;}
+    .bottom span {font-size: 14px;}
+}
+/* 适配 iphone 4 */
+@media only screen and (max-height: 500px) {
+    /* page 1 */
+    .page12 {top: 18%;}   
+    /* page 2 */
+    .page22, .page32, .page52, .page62 {margin-top: 6%;}
+    .page22 p, .page32 p, .page52 p, .page62 p {margin-bottom: 2%; line-height: 30px;}
+    .page22 span, .page32 span, .page52 span, .page62 span {line-height: 24px;}  
+    /* page 4 */
+    .page41 {margin-top: 18px;}
+    .page42 {bottom: 2%;}   
+    /* page 7 */
+    .page72 p {margin-top: 4%;}
+    .page72 span:first-of-type {margin-top: 4%;}
+    /* page 8 */
+    .text {padding: 14% 0 4% 0;}
+    .wx {margin-top: 0;}
+    .bottom span {margin-top: 5px;}
+}
